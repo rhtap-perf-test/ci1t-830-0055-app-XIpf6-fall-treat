@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-zigt
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-zigt
+    app.kubernetes.io/part-of: ci1t-830-0055-app
+  name: devfile-sample-zigti5id
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: devfile-sample-zigt
+    weight: null
+status: {}

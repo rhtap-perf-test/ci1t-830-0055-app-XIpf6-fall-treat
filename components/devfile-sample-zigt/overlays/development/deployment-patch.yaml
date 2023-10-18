@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-zigt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0055-tenant/ci1t-830-0055-app/devfile-sample-zigt@sha256:e043d8e50e715526716f2cf6d59866c951f5705991a1b2418597c94cb7c351d7
+        name: my-nodejs
+        resources: {}
+status: {}
